@@ -30,7 +30,7 @@ function addCol()
    numCol++;
 }
 
-function removeRow()
+function removeRow() 
 {
 let delRows = document.getElementsByClassName("row");
 delRows[0].remove();
