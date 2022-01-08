@@ -1,7 +1,7 @@
 let numCol = 3; //initial number of columns
 
 function addRow()
-{
+{ 
     let table = document.getElementById("grid");  //obtains grid element and sets it to variable
    let rowClass = document.createElement("div");  //creates a new div element
    rowClass.setAttribute("class", "row"); //sets attributes of row class
