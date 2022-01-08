@@ -47,3 +47,67 @@ function removeCol() //function to remove column
    }
    numCol--; //decreases column count by one 
 }
+
+
+let colorSelect = ""; //default colorSelect
+let mouseHold = false;  //default mouseHold
+let curColor = "";  //default current color
+
+
+
+function newColor(choice) 
+{
+    colorSelect=choice;  //sets color to new choice for click function
+    addEvent();
+}
+
+function colorSet()
+    {
+        this.style.backgroundColor = colorSelect;  //sets color using background color
+
+    }
+
+function canChangeColor(box)
+{
+    box.addEventListener("click", colorSet); //adds click event listener to element
+
+}
+
+function colorAll() //function to color all boxes
+{
+   let boxes = document.getElementsByClassName("col-sm border border-dark box white"); //obtains all cells
+   for(let i = 0; i < boxes.length; i++)  //traverses through every cell
+   {
+       let box = boxes[i];
+    box.style.backgroundColor = colorSelect; //sets cell to the chosen color
+ 
+   }
+  
+}
+
+
+
+
+function colorAllEmpty() //function to color all white boxes
+{
+    let boxes2 = document.getElementsByClassName("col-sm border border-dark box white"); //obtains all cells
+    for(let i = 0; i < boxes2.length; i++)  //traverses through every cell
+    {
+        if(boxes2[i].style.backgroundColor == "")  //checks if box is white
+        {
+            boxes2[i].style.backgroundColor = colorSelect; //if so, sets box to selected color
+        }
+  
+    }
+
+}
+
+function addEvent() //function to add event listeners
+{
+    let boxes3 = document.getElementsByClassName("col-sm border border-dark box white"); //obtains all cells
+    for(let i = 0; i < boxes3.length; i++)  //traverses through every cell
+   {
+       let box = boxes3[i];
+       canChangeColor(box);  //adds event listeners to every cell
+   }
+}

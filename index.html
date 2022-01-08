@@ -53,9 +53,13 @@
             <h3 class=py-2>Select from the following list and click on a box to change the color!</h6>
             <form>
                 <label for="color">Choose a color:</label>
-                <select name="color" id="color">
+                <select name="color" id="color" onchange="newColor(this.value)">
                
+                    <option value="---">---</option>
                     <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
     
                 </select>
             </form>
@@ -65,11 +69,15 @@
             <h3 class=py-2>Select a color and it will change all the <b>white</b> boxes to the color.</h6>
             <form>
                 <label for="color1">Choose a color:</label>
-                <select name="color1" id="color1">
+                <select name="color1" id="color1" onchange="newColor(this.value)">
             
+                    <option value="---">---</option>
                     <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
                 </select>
-                <button type="button" class=''>Fill all white boxes</button>
+                <button type="button" class='colorAllEmpty' onclick=colorAllEmpty()>Fill all white boxes</button>
             </form>
         </div>
     
@@ -77,11 +85,16 @@
             <h3 class=py-2>Select a color and it will change ALL the boxes to the color.</h6>
             <form>
                 <label for="color2">Choose a color:</label>
-                <select name="color2" id="color2">
+                <select name="color2" id="color2" onchange="newColor(this.value)">
         
+
+                    <option value="---">---</option>
                     <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
                 </select>
-                <button type="button" class=''>Fill all boxes</button>
+                <button type="button" class='colorAll' onclick=colorAll()>Fill all boxes</button>
             </form>
         </div>
     
@@ -91,7 +104,11 @@
                 <label for="color3">Choose a color:</label>
                 <select name="color3" id="color3">
       
+                    <option value="---">---</option>
                     <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
                 </select>
             </form>
         </div>
