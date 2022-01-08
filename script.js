@@ -45,5 +45,5 @@ function removeCol() //function to remove column
            delColumns[i].removeChild(delColumns[i].lastElementChild); //removes last column of each group of rows
  
    }
-   numCol--; //decreases column count by one
+   numCol--; //decreases column count by one 
 }
