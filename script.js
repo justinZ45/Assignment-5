@@ -14,3 +14,18 @@ function addRow()
    addRowClass.appendChild(newRow);  //adds new row to the grid, and shows on screen
     }
 }
+
+ 
+function addCol()
+{
+  let columns = document.getElementsByClassName("row");
+ 
+   for(let i = 0; i < columns.length; i++)
+   {
+       let newCol = document.createElement("div");
+      newCol.setAttribute("class", "col-sm border border-dark box white");
+      columns[i].appendChild(newCol);
+      
+   }
+   numCol++;
+}
