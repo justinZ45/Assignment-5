@@ -131,6 +131,6 @@ function addEvent() //function to add event listeners
     for(let i = 0; i < boxes3.length; i++)  //traverses through every cell
    {
        let box = boxes3[i];
-       canChangeColor(box);  //adds event listeners to every cell
+       canChangeColor(box);  //adds event listeners to every cell 
    }
 }
