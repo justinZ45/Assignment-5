@@ -1,0 +1,29 @@
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+#grid
+{
+    padding: 20px 350px 20px 350px;
+
+}
+
+#py-2
+{
+    font-display: large;
+}
+
+body 
+{
+    background-color: lightgrey;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-items:center;
+}
+
+
+.text
+{
+    color: black;
+}
