@@ -2,7 +2,7 @@
 
 In this assignment, HTML, CSS, and JavaScript are utilized to make an interactive grid. The user can:
 
-- Add rows to the grid.
+- Add rows to the grid. 
 - Add columns to the grid.
 - Remove rows from the grid.
 - Remove columns from the grid.

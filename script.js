@@ -99,7 +99,7 @@ function colorAllEmpty() //function to color all white boxes
         }
   
     }
-
+ 
 }
 
 function addEvent() //function to add event listeners
