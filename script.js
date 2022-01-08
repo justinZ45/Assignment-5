@@ -71,6 +71,29 @@ function canChangeColor(box)
 {
     box.addEventListener("click", colorSet); //adds click event listener to element
 
+    box.addEventListener("mousedown", function()  //event for mouse down
+  {
+      mouseHold = true;
+      curColor = colorSelect;
+  })
+ 
+  box.addEventListener("mousemove" , function()  //event for mouse move
+  {
+      if(mouseHold==true)
+      {
+          box.style.backgroundColor=curColor;  //change box color
+      }
+  })
+ 
+  box.addEventListener("mouseup", function()  //event for mouse up
+  {
+      if(mouseHold==true)
+      {
+      mouseHold = false  //mousehold variable becomes false
+      }
+  })
+
+
 }
 
 function colorAll() //function to color all boxes
